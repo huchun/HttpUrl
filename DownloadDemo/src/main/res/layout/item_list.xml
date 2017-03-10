@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/id_fileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="文件名" />
+
+    <ProgressBar
+        android:id="@+id/id_progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/id_fileName"
+        android:layout_below="@+id/id_fileName"
+        android:layout_marginTop="15dp" />
+
+    <Button
+        android:id="@+id/id_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/id_download"
+        android:layout_alignBottom="@+id/id_download"
+        android:layout_alignRight="@+id/id_progressBar"
+        android:text="暂停" />
+
+    <Button
+        android:id="@+id/id_download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_progressBar"
+        android:layout_marginTop="22dp"
+        android:layout_toLeftOf="@+id/id_stop"
+        android:text="下载" />
+
+</RelativeLayout>
